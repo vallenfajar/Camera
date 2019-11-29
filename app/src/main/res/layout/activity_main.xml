@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="264dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="106dp"
+            android:layout_below="@+id/imageView"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:text="Camera" />
+
+        <Button
+            android:id="@+id/btn_galery"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btn_camera"
+            android:text="Gallery" />
+    </RelativeLayout>
+</RelativeLayout>
